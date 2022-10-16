@@ -1,0 +1,70 @@
+body{
+    font-family:'Ms Madi', cursive;
+}
+.header{
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    text-align: right;
+    padding: 30px 20px 40px 20px;
+    border-radius: 15px;
+}
+.degrees{
+    font-size: 40px;
+    display:flex;
+    width: 100%
+}
+.table{
+    position: relative;
+    margin-left: 310px;
+    top: -175px;
+}
+.list-group-item{
+    font-size: 15px;
+
+}
+.asking-form{
+    display: block;
+    position: relative;
+    margin-left: 900px;
+    top: -160px;
+}
+.about_user{
+    position: relative;
+    margin-left: 900px;
+    top: -400px;
+}
+.center-table{
+    position: relative;
+    margin-left: 200px;
+    margin-top: -300px;
+}
+.col-1{
+    margin-right: 90px;
+    border: 1px solid #424146;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.cards_with_weather{
+    position: relative;
+
+}
+.cards8{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 200px;
+    
+}
+.text{
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+}
+.about{
+    font-size: 9px;
+    text-align: center;
+}

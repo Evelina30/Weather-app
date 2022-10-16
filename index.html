@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+   
+</head>
+
+<body>
+<div class="all-page">
+      <!--First window with degrees-->
+        <div class="card header" style="width: 15rem;">
+            <div class="card-body">
+                <p class="card-text degrees">
+                    <span id='changeTemp'> 17</span>°
+                    <a href="#" id="temperatureC">C </a> | 
+                    <a href="#" id="temperatureF"> F</a>
+                </p>  
+            </div>
+            <button id="myPosition">Мое местоположение</button>
+            <div>Latitude: <span id="latitude"></span></div>
+            <div>Longitude: <span id="longitude"></span></div>
+        </div>
+        <!--Second window with weather-->
+        <div class="card table" style="width: 15rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="precipitation">precipitation:</li>
+                <li class="list-group-item" id="humidity">humidity: __%</li>
+                <li class="list-group-item" id="wind">wind: ___km/h</li>
+            </ul>
+        </div>
+        <!--Main city/date/time (right heders)-->
+        <div>
+            <form class="asking-form" >
+                <input id='enterYourCity' type="text" placeholder="Enter your city here" autofocus>
+                <button id="enterCityBtn">Search</button>
+                <br />
+                <input type="date" placeholder="Enter today date">
+                <br />
+                <input type="time">
+            </form>
+        </div>
+        <!--Main right menu about-->
+        <div class="about_user">
+            <h1 id='cityName'>
+                Kharkiv
+            </h1>
+            <h2 id="dateNow">
+                September 11 Saturday
+            </h2>
+            <h3 id="timeNow">
+                Time 21:59
+            </h3>
+        </div>
+        <!--Menu in central part-->  
+<div class="container text-center">
+    <div class="row center-table">
+        <div class="col-1">
+            Forecast on 1 day  
+        </div>
+        <div class="col-1">
+            Forecast on 3 days     
+        </div>
+        <div class="col-1">
+            Forecast on 5 days     
+        </div>
+    </div>
+</div>
+        <!--Saturday 00-03-->
+<div class="cards8">
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+        <div class="col-md-4">
+        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title text">Saturday</h5>
+            <p class="card-text about">night
+                <br />
+                00:00 - 03:00
+                <br />
+                11 °C
+            </p> 
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--03-06-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+    <div class="card-body">
+    <h5 class="card-title text">Saturday</h5>
+    <p class="card-text about">night
+        <br />
+        03:00 - 06:00
+        <br />
+        12 °C
+    </p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--06-09-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+    <div class="row g-0">
+    <div class="col-md-4">
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+    <div class="card-body">
+    <h5 class="card-title text">Saturday</h5>
+    <p class="card-text about">morning
+    <br />
+    06:00 - 09:00
+    <br />
+    14 °C
+    </p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+        <!--09-12-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+    </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title text">Saturday</h5>
+                <p class="card-text about">day
+                        <br />
+                        09:00 - 12:00
+                        <br />
+                        11 °C
+                </p>
+            
+            </div>
+        </div>
+    </div>
+    </div>
+            <!--12-15-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+    </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title text">Saturday</h5>
+                    <p class="card-text about">day
+                    <br />
+                    12:00 - 15:00
+                    <br />
+                    16 °C
+                    </p>
+                    
+            </div>
+        </div>
+    </div>
+    </div>
+                <!--15-18-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+    </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title text">Saturday</h5>
+                    <p class="card-text about">evening
+                    <br />
+                    15:00 - 18:00
+                    <br />
+                    16 °C
+                    </p>
+                        
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--18-21-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+            </div>
+    <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title text">Saturday</h5>
+                <p class="card-text about">night
+                    <br />
+                    18:00 - 21:00
+                    <br />
+                    15 °C
+                </p>
+                            
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--21-00-->
+    <div class="card mb-3 cards_with_weather" style="max-width: 100px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-vector%2Fvector-line-icon-img-260nw-2050481222.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fru%2Fsearch%2Fimg&tbnid=eM7kKGyr-A4JQM&vet=12ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ..i&docid=fRPIk_Gcvcv41M&w=260&h=280&q=img&ved=2ahUKEwjc0Kr_jqn6AhWRqIsKHVVpAEQQMygKegUIARDRAQ" class="img-fluid rounded-start" alt="...">
+            </div>
+    <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title text">Saturday</h5>
+                <p class="card-text about">night
+                    <br />
+                    21:00 - 00:00
+                    <br />
+                    12 °C
+                </p>
+                                
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <!--  <script>
+      function showUser(response) {
+        console.log(response, '---------------response')
+        alert(`The user name is ${response}`);
+      }
+
+      let url = "https://api.openweathermap.org/data/2.5/weather?q=Lisbon&units=metric&appid=68714f8012f38a2a9e09dd6b144ea965";
+      axios.get(url).then(showUser);
+    </script> -->
+<script src="index.js"></script>
+</body>
+</html>
